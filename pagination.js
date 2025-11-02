@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
   const items = document.querySelectorAll(".portfolio-flex-item");
   const totalItems = items.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
