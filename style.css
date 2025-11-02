@@ -489,3 +489,16 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+#google_translate_element {
+  font-size: 14px;
+  z-index: 1000;
+}
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
