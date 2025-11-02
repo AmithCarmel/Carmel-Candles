@@ -499,17 +499,4 @@ footer .footer-below {
   z-index: 9999;
 }
 
-/* Optional: Make it blend with navbar */
-.goog-te-gadget {
-  font-size: 13px !important;
-  color: white !important;
-  background: transparent !important;
-  border: none !important;
-}
-
-/* Remove Google globe icon if you prefer a cleaner look */
-.goog-te-gadget img {
-  display: none !important;
-}
-
 
