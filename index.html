@@ -204,6 +204,8 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
         <form action="https://formspree.io/f/xovprqyn" method="POST" id="contactForm" novalidate>
+          
+          <!-- Name -->
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label for="name">Name</label>
@@ -212,9 +214,8 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
-          <div class="row control-group">
 
-
+          <!-- Phone Number -->
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label for="phone">Phone Number</label>
@@ -224,7 +225,7 @@
             </div>
           </div>
 
-            
+          <!-- Email -->
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label for="email">Email Address</label>
@@ -233,10 +234,14 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
+
+          <!-- Hidden fields -->
           <div>
             <input type="hidden" name="_subject" value="New submission!">
             <input type="text" name="_gotcha" style="display:none" />
           </div>
+
+          <!-- Message -->
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label for="message">Message</label>
@@ -245,8 +250,11 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
+
           <br>
           <div id="success"></div>
+
+          <!-- Submit -->
           <div class="row">
             <div class="form-group col-xs-12">
               <button type="submit" class="btn btn-success btn-lg">Send</button>
@@ -257,6 +265,7 @@
     </div>
   </div>
 </section>
+
 
   
 
