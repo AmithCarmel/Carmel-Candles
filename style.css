@@ -491,30 +491,47 @@ footer .footer-below {
 }
 
 
-/* Portfolio Image Consistency Fix */
-.portfolio-flex-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
+/* Portfolio Image Consistency Fix - 6 items per page */
+.portfolio-flex-item {
+    margin-bottom: 30px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
+.portfolio-flex-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
+
+/* 3 columns on desktop - showing 6 items (3x2 grid) */
+@media (min-width: 960px) {
+    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+        flex: 1 0 31%;
+        max-width: 31%;
+    }
+    
     .portfolio-flex-item img {
-        height: 250px;
+        height: 300px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+/* 2 columns on tablet - showing 6 items (2x3 grid) */
+@media (min-width: 640px) and (max-width: 959px) {
+    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+        flex: 1 0 49%;
+        max-width: 49%;
+    }
+    
     .portfolio-flex-item img {
         height: 280px;
     }
 }
 
-@media (min-width: 992px) {
+/* 1 column on mobile - showing 6 items stacked */
+@media (max-width: 639px) {
     .portfolio-flex-item img {
-        height: 320px;
+        height: 250px;
     }
 }
 
@@ -523,4 +540,11 @@ footer .footer-below {
     width: 100%;
     height: auto;
     max-width: 600px;
+}
+
+/* Portfolio link styling */
+.portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
